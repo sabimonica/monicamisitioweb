@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(54, 54, 58);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 8em;
+    font-family: 'Waltograph',sans-serif;
+    color: aliceblue;
+}
+/* allura-regular - latin */
+@font-face {
+    font-family: 'Waltograph';
+    font-weight: 10;
+    src: url('../fonts/DS-DIGII.TTF');
+    src: local(''),
+         url('../fonts/DS-DIGII.TTF') 
+         url('../fonts/DS-DIGII.TTF') format('truetype');
