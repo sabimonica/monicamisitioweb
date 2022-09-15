@@ -1,3 +1,24 @@
 .img-100 {
-    width: 100%;
+    width: 33%;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.subtitulo {
+    text-align: center;
+}
+
+.img-torre{
+    height: 26.3em;
+}
+.img-mickey {
+    height: 26.3em;
+}
+.img-jungle {
+    height: 26.3em;
+}
+.castillo {
+    font-size: 2em;
+
 }
