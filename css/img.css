@@ -1,6 +1,8 @@
+.box-img {
+    display: inline-flex ;
+}
 .img-100 {
-    width: 33%;
-    justify-content: center;
+    width: 97%;
 }
 h1{
     text-align: center;
@@ -10,15 +12,14 @@ h1{
 }
 
 .img-torre{
-    height: 26.3em;
+    height: 58%;
 }
-.img-mickey {
-    height: 26.3em;
-}
-.img-jungle {
-    height: 26.3em;
-}
-.castillo {
-    font-size: 2em;
 
+.texto{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    width: 27em;
 }
