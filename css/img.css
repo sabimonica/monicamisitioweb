@@ -12,14 +12,27 @@ h1{
 }
 
 .img-torre{
-    height: 58%;
+    height: 60%;
+    width: 116%;
+}
+.img-mickey {
+    height: 60%;
+    width:60%;
+}
+.img-jungle {
+    width: 86%;
+    height: 60%;
 }
 
 .texto{
     text-align: center;
 }
 
-p{
+.p{
     text-align: justify;
     width: 27em;
+}
+.img-genio {
+    height: 60%;
+    width: 60%;
 }
