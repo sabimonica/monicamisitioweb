@@ -1,25 +1,30 @@
-.box-img {
-    display: inline-flex ;
+
+.box{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-left: 47px;
 }
-.img-100 {
-    width: 97%;
+
+img{
+    width: 100%;
 }
 h1{
+    text-align: center;
+}
+h2{
     text-align: center;
 }
 .subtitulo {
     text-align: center;
 }
 
-.img-torre{
-    height: 58%;
-}
-
-.texto{
-    text-align: center;
-}
-
 p{
+    text-align: center;
     text-align: justify;
-    width: 27em;
+   
+
 }
+
+
+
