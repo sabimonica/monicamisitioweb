@@ -1,0 +1,29 @@
+.box{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-left: 47px;
+}
+.box-img {
+    float: left;
+    width: 370px;
+    border: 1px rgb(240, 215, 230);
+    border-radius: 8px;
+}
+img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.subtitulo {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    text-align: justify;
+}

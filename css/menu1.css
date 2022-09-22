@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+.box {
+   background-color:gainsboro;
+text-align: right;
+}
+li {
+    list-style: none;
+    font-size: 2em;
+   font-family: cursive;
+    margin: 20px; 
+    display: inline-block;
+}
+
+ 
