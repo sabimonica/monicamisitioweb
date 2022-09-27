@@ -1,0 +1,50 @@
+.box{
+    width: 260px;
+    height: 260px;
+    text-align: center;
+    margin: 1em;
+}
+
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding-top: 80px;
+    font-family: cursive;
+
+
+}
+.caja1{
+    box-shadow: 20px 20px 10px rgb(199, 160, 113);
+    margin-left: 83vh;
+    background-color: bisque;
+}
+.caja2{
+    box-shadow: 20px 20px 10px rgb(150, 66, 7);
+    background-color: chocolate;
+}
+.caja3{
+    box-shadow: 20px 20px 10px rgb(148, 148, 23);
+    background-color: yellow;
+}
+.caja4{
+    box-shadow: 20px 20px 10px rgb(139, 40, 139);
+    background-color: violet;
+}
+.caja5{
+    box-shadow: 20px 20px 10px rgb(245, 60, 47);
+    background-color: tomato;
+}
+.caja6{
+    box-shadow: 20px 20px 10px rgb(192, 132, 58);
+    background-color: burlywood;
+}
+.aling{
+    margin-left: 59vh;
+    display: inline-flex;
+}
+.aling1{
+    margin-left: 37vh;
+    display: inline-flex;
+}
