@@ -12,12 +12,9 @@ h2 {
     text-align: center;
     padding-top: 80px;
     font-family: cursive;
-
-
 }
 .caja1{
     box-shadow: 20px 20px 10px rgb(199, 160, 113);
-    margin-left: 83vh;
     background-color: bisque;
 }
 .caja2{
@@ -41,10 +38,7 @@ h2 {
     background-color: burlywood;
 }
 .aling{
-    margin-left: 59vh;
-    display: inline-flex;
-}
-.aling1{
-    margin-left: 37vh;
-    display: inline-flex;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
