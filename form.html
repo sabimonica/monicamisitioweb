@@ -9,16 +9,39 @@
 </head>
 <body>
     <h1>Citas Medicas</h1>
+     <div class="centro">
     <form>
-        <label >Ingre el tipo de documento</label><br>
+        <fieldset>
+        <legend>Ingrese la Informacion</legend>
+        <label >Ingre el tipo de documento</label>
         <select>
             <option value="">Registro Civil</option>
             <option value="">Targeta de identidad</option>
             <option value="">Cedula de Ciudadania</option>
             <option value="">Cedula de Extranjeria</option>
-        </select><br>
-        <label>Ingrese su numero de documento </label><br>
-        <input type="text">
-    </form>
+        </select>
+        <label>Ingrese su numero de documento </label>
+        <input type="text" placeholder="Numero de documento">
+        <label >Ingrese su (s) nombre </label>
+        <input type="text" placeholder="Nombre completo">
+        <label >Ingrese su (s) apellidos </label>
+        <input type="text" placeholder="Apellidos">
+        <label >Ingrese su genero </label>
+        <input type="radio" name="Genero" id="">Masculino<br>
+        <input type="radio" name="Genero" id="">Femenino<br>
+        <input type="radio" name="Genero" id="">Indeterminado<br>
+        <label >Seleccione el dia de la cita</label>
+       <input type="checkbox" name="DiaCita" id="">Lunes<br>
+       <input type="checkbox" name="DiaCita" id="">Martes <br>
+       <input type="checkbox" name="DiaCita" id="">Miercoes <br>
+       <input type="checkbox" name="DiaCita" id="">Jueves <br>
+       <input type="checkbox" name="DiaCita" id="">Viernes <br>
+       <label>Dudas E Inquietudes</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea><br>
+      <input type="submit" value="Enviar"><br>
+      <button>Confirmar</button>
+    </fieldset>
+    </form> 
+</div>
 </body>
 </html>
