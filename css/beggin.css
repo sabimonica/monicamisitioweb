@@ -1,0 +1,14 @@
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+body{
+    background-color: rgb(0, 135, 131);
+}
+form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+fieldset {
+    background-color:rgb(205, 231, 230);
+}
