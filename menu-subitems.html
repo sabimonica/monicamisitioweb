@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu-sibitems</title>
     <link rel="stylesheet" href="css/menu-subitems.css">
+    <link rel="stylesheet" href="icons/all.css">
 </head>
 <body>
     <nav>
+        <!--Menu de primer nivel-->
     <ul>
-    <li class="inicio"><a href=""  >Inicio</a></li>
-    <li id="nosotros" class="inicio"><a href="">Nosotros</a></li>
-    <li class="inicio"><a href="">Contactenos</a></li>
-    <li class="inicio"><a href="">Galeria</a></li>
+    <li><a href="#">Inicio <i class="fa-solid fa-angle-down"></i></a>
+        <ul>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Iniciar</a></li>
+            
+        </ul>
+    </li>
+
+    <li><a href="#">Nustra Empresa     <i class="fa-solid fa-angle-down"></i></a>
+        <!--Menu de segundo nivel-->
+       <ul>
+        <li><a href="#">Caqueta</a></li>
+        <li><a href="#">Putumayo</a></li>
+        <li><a href="#">Tolima</a></li>
+          <li><a href="#">Huila  <i class="fa-solid fa-angle-right"></i></a>
+          <ul> 
+            <li><a href="#">Pitalito</a></li>
+            <li><a href="#">Neiva</a></li>
+            <li><a href="#">Garzon</a></li>
+            <li><a href="#">Timana</a></li>
+          </ul>
+        </li>
+       </ul>
+    </li>
+
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Contactenos</a></li>
+    <li><a href="#">Galeria</a></li>
 </ul>
 </nav>
 </body>
