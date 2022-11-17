@@ -36,7 +36,7 @@
 }
 .item-main-menu:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(71, 68, 68,.9);
 }
 .texto-parrafo {
     font-size: 1.2em;
