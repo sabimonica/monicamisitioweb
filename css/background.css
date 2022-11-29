@@ -22,7 +22,14 @@ li {
     display: inline-block;
     font-weight: 900;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }
 .last-item {
     margin-right: 80px;
+}
+h1 {
+    text-align: center;
+}
+p{
+    text-align: justify;
 }
