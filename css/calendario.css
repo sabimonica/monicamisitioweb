@@ -1,0 +1,20 @@
+h2{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+}
+tr{
+    text-align: center;
+}
+.box-main{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 60px 60px 60px 60px 60px ;
+    border:2px solid rgb(64, 64, 64, .8) ;
+    width: 900px;
+}
+.box{
+    background-color: rgb(4, 56, 87);
+    border: 1px solid white;
+    color: aliceblue;
+    font-size: 2em;
+}
