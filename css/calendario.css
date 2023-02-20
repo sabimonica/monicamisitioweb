@@ -1,20 +1,43 @@
 h2{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 text-align: center;
-}
-tr{
-    text-align: center;
+font-size: 5vh;
+font-weight: 700;
 }
 .box-main{
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-rows: 60px 60px 60px 60px 60px ;
-    border:2px solid rgb(64, 64, 64, .8) ;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 60px);
+    border-top: 3px solid rgb(160, 160, 160);
     width: 900px;
+  
+}
+.box-1{
+    grid-column-end: 6;
 }
 .box{
-    background-color: rgb(4, 56, 87);
-    border: 1px solid white;
-    color: aliceblue;
     font-size: 2em;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+.box-8, .box-25{
+    background-color: rgb(0,181, 173);
+    border-radius: 20px;
+}
+.box-3, .box-10, .box-17,.box-24, .box-31{
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0.158), gray );
+    border-radius: 20px;
+}
+.diembre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dia{
+    border-bottom: dashed 1px black;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
 }
