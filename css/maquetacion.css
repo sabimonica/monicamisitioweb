@@ -1,0 +1,39 @@
+.main-box{
+    display: grid;
+    grid-template: 'logo     boton-inicio   boton-genero   boton-pelicula    boton-serie    menu-busqueda  menu-entrar   menu-registrar' 30px / 
+                   "img      img            img            img               img            img            img           img                   "
+                    250px    100px          130px          130px             800px          130px          130px         130px;    
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(0, 178, 255);
+}
+.boton-inicio{
+    grid-area: boton-inicio;
+    background-color: rgb(46, 77, 90);
+}
+.boton-genero{
+    grid-area: boton-genero;
+    background-color: rgb(0, 178, 255);
+}
+.boton-pelicila{
+    grid-area: boton-pelicula;
+    background-color: rgb(0, 178, 255);
+}
+.boton-serie{
+    grid-area: boton-serie;
+    background-color: rgb(0, 178, 255);
+}
+.menu-busqueda{
+    grid-area: menu-busqueda;
+    background-color: rgb(0, 178, 255);
+}
+.menu-entrar{
+  grid-area: menu-entrar;
+    background-color: rgb(0, 178, 255);
+}
+.menu-registrar{
+ grid-area: menu-registrar;
+    background-color: rgb(0, 178, 255);
+}
+
