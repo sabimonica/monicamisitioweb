@@ -1,39 +1,98 @@
-.main-box{
+* {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    width:97%;
+    margin: 0 auto;
+    gap: 10px;
     display: grid;
-    grid-template: 'logo     boton-inicio   boton-genero   boton-pelicula    boton-serie    menu-busqueda  menu-entrar   menu-registrar' 30px / 
-                   "img      img            img            img               img            img            img           img                   "
-                    250px    100px          130px          130px             800px          130px          130px         130px;    
+    grid-template: "header         header         header          hearder            hearder "        100px
+                   "img-principal  img-principal  img-principal   img-principal      img-principal "  350px
+                   "news-1         news-2         news-3          news-4             news-5 "         auto 
+                   "news-6         news-7         news-8          news-9             news-10 "        auto /
+                    1fr            1fr            1fr             1fr                1fr   ;
 }
-.logo{
-    grid-area: logo;
-    background-color: rgb(0, 178, 255);
-}
-.boton-inicio{
-    grid-area: boton-inicio;
-    background-color: rgb(46, 77, 90);
-}
-.boton-genero{
-    grid-area: boton-genero;
-    background-color: rgb(0, 178, 255);
-}
-.boton-pelicila{
-    grid-area: boton-pelicula;
-    background-color: rgb(0, 178, 255);
-}
-.boton-serie{
-    grid-area: boton-serie;
-    background-color: rgb(0, 178, 255);
-}
-.menu-busqueda{
-    grid-area: menu-busqueda;
-    background-color: rgb(0, 178, 255);
-}
-.menu-entrar{
-  grid-area: menu-entrar;
-    background-color: rgb(0, 178, 255);
-}
-.menu-registrar{
- grid-area: menu-registrar;
-    background-color: rgb(0, 178, 255);
+.header, .img-principal, .img-article, .inicio, .genero, .pelicula, .serie {
+    border-radius: 10px;
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.header {
+    grid-area: header;
+    background: rgb(0,129,255);
+    grid-column-end: 2;
+    margin-top: 15px;
+}
+.inicio{
+    grid-area: header;
+    background: rgb(146, 115, 115);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 25px;
+    height: 60px;
+    width: 150px;
+}
+
+.pelicula{
+    grid-area: header;
+    background: rgb(146, 115, 115);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-top: 25px;
+    height: 60px;
+    width: 150px;
+}
+.serie{
+    grid-area: header;
+    background: rgb(146, 115, 115);
+    grid-column-start:5;
+    grid-column-end: 6;
+    margin-top: 25px;
+    height: 60px;
+    width: 150px;
+}
+
+.img-principal {
+    grid-area: img-principal;
+    background: rgb(102, 139, 0);
+}
+.img-article {
+    height: 250px;
+    background: rgb(202, 146, 146);
+}
+
+.news-1 {
+    grid-area: news-1;
+}
+.news-2 {
+    grid-area: news-2;
+}
+.news-3 {
+    grid-area: news-3;
+}
+.news-4 {
+    grid-area: news-4;
+}
+.news-5 {
+    grid-area: news-5;
+}
+.news-6 {
+    grid-area: news-6; 
+}
+.news-7 {
+    grid-area: news-7; 
+}
+.news-8 {
+    grid-area: news-8; 
+}
+.news-9{
+    grid-area: news-9; 
+}
+.news-10 {
+    grid-area: news-10; 
+}
