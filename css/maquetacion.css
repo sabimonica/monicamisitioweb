@@ -2,18 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
 .contenedor {
-    width:97%;
+    width: 80%;
     margin: 0 auto;
-    gap: 10px;
+    grid-gap: 30px;
     display: grid;
-    grid-template: "header         header         header          hearder            hearder "        100px
-                   "img-principal  img-principal  img-principal   img-principal      img-principal "  350px
-                   "news-1         news-2         news-3          news-4             news-5 "         auto 
-                   "news-6         news-7         news-8          news-9             news-10 "        auto /
-                    1fr            1fr            1fr             1fr                1fr   ;
+
+    grid-template: "header         empty           inicio         pelicula        serie              " 100px
+        "img-principal  img-principal  img-principal   img-principal      img-principal " 550px
+        "news-1         news-2         news-3          news-4             news-5 " auto "news-6         news-7         news-8          news-9             news-10 " auto /
+        1fr 1fr 1fr 1fr 1fr;
 }
-.header, .img-principal, .img-article, .inicio, .genero, .pelicula, .serie {
+
+.header,
+.inicio,
+.pelicula,
+.serie,
+.img-principal,
+.img-article {
     border-radius: 10px;
     color: white;
     font-size: 1.8em;
@@ -24,75 +31,126 @@
 
 .header {
     grid-area: header;
-    background: rgb(0,129,255);
+    background: rgb(0, 129, 255);
+    grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 15px;
 }
-.inicio{
-    grid-area: header;
-    background: rgb(146, 115, 115);
-    grid-column-start: 3;
-    grid-column-end: 4;
+
+.inicio {
+    grid-area: inicio;
+    background: rgb(10, 75, 139);
     margin-top: 25px;
-    height: 60px;
-    width: 150px;
 }
 
-.pelicula{
-    grid-area: header;
-    background: rgb(146, 115, 115);
-    grid-column-start: 4;
-    grid-column-end: 5;
+.pelicula {
+    grid-area: pelicula;
+    background:  rgb(10, 75, 139);
     margin-top: 25px;
-    height: 60px;
-    width: 150px;
 }
-.serie{
-    grid-area: header;
-    background: rgb(146, 115, 115);
-    grid-column-start:5;
-    grid-column-end: 6;
+
+.serie {
+    grid-area: serie;
+    background:rgb(10, 75, 139);
     margin-top: 25px;
-    height: 60px;
-    width: 150px;
+
 }
 
 .img-principal {
     grid-area: img-principal;
     background: rgb(102, 139, 0);
+    position: relative;
+    top: -120px;
+    z-index: -1;
 }
+
 .img-article {
     height: 250px;
-    background: rgb(202, 146, 146);
+    background: rgb(134, 181, 212);
+    position: relative;
+    top: -120px;
 }
 
 .news-1 {
     grid-area: news-1;
 }
+
 .news-2 {
     grid-area: news-2;
 }
+
 .news-3 {
     grid-area: news-3;
 }
+
 .news-4 {
     grid-area: news-4;
 }
+
 .news-5 {
     grid-area: news-5;
 }
+
 .news-6 {
-    grid-area: news-6; 
+    grid-area: news-6;
 }
+
 .news-7 {
-    grid-area: news-7; 
+    grid-area: news-7;
 }
+
 .news-8 {
-    grid-area: news-8; 
+    grid-area: news-8;
 }
-.news-9{
-    grid-area: news-9; 
+
+.news-9 {
+    grid-area: news-9;
 }
+
 .news-10 {
-    grid-area: news-10; 
+    grid-area: news-10;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .contenedor {
+        width: 85%;
+        grid-template:
+            "header        inicio         pelicula        serie               " 90px
+            "img-principal  img-principal  img-principal   img-principal      img-principal " 250px
+            "news-1         news-2         news-3          news-4             news-5 " auto "news-6         news-7         news-8          news-9             news-10 " auto /
+            1fr 1fr 1fr 1fr 1fr
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .contenedor {
+        width: 85%;
+        grid-template: "header" 50px
+            "inicio" 50px
+            "pelicula" 50px
+            "serie" 50px
+            "img-principal" 260px
+            "news-1" auto "news-2" auto
+            "news-3" auto
+            "news-4" auto "news-5" auto
+            "news-6" auto "news-7" auto
+            "news-8" auto
+            "news-9" auto
+            "news-10" auto/
+            1fr;
+    }
+
+    .news {
+        font-size: .8em;
+    }
+
+    .img-principal {
+        position: relative;
+        top: -300px;
+    }
+    .img-article {
+        position: relative;
+        top: -300px;
+    }
 }
