@@ -70,7 +70,7 @@ h1{
     height: 250px;
     background: rgb(134, 181, 212);
     position: relative;
-    top: -120px;
+    
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -113,14 +113,22 @@ h1{
 .news-10 {
     grid-area: news-10;
 }
-
+.text{
+    text-align: center;
+}
+.table, .celular{
+    display: none;
+}
 @media only screen and (max-width: 1024px) {
     .contenedor {
         width: 85%;
         grid-template:
             "header             empty-vas           empty-vas                      inicio            pelicula          serie"           90px
             "img-principal      img-principal       img-principal                  img-principal     img-principal     img-principal"   250px
-            "news-1             news-1              news-2                         news-2             news-3           news-3"          auto/
+            "news-1             news-1              news-2                         news-2             news-3           news-3"          
+            "news-4             news-4              news-5                         news-5            news-6            news-6"
+            "news-7             news-7              news-8                         news-8            news-9            news-9"
+            "news-10            news-10             empty-1                        empty-1           empty-1           empty-1"/
            
              1fr                1fr                 1fr                             1fr                1fr              1fr;
     }
@@ -148,7 +156,8 @@ display: none;
                         "news-7" auto
                         "news-8" auto
                         "news-9" auto
-                        "news-10" auto/
+                        "news-10"
+                        /
                          1fr;
     }
 
