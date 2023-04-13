@@ -19,11 +19,12 @@ imgMini1.addEventListener("click", function(){
     imgMini3.classList.remove("img-mini-act");
     imgMini4.classList.remove("img-mini-act");
   });
+  
   imgMini2.addEventListener("click", function(){
     imgBox.setAttribute("src", "img/image-product-2.jpg");
     boxImgMini1.classList.remove("box-img-mini");
     boxImgMini2.classList.add("box-img-mini");
-    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini3.classList.remove("box-img-mini");
     boxImgMini4.classList.remove("box-img-mini");
     imgMini1.classList.remove("img-mini-act");
     imgMini2.classList.add("img-mini-act");
@@ -35,31 +36,39 @@ imgMini1.addEventListener("click", function(){
     imgBox.setAttribute("src", "img/image-product-3.jpg");
     boxImgMini1.classList.remove("box-img-mini");
     boxImgMini2.classList.remove("box-img-mini");
-    boxImgMini2.classList.add("box-img-mini");
+    boxImgMini3.classList.add("box-img-mini");
     boxImgMini4.classList.remove("box-img-mini");
     imgMini1.classList.remove("img-mini-act");
     imgMini2.classList.remove("img-mini-act");
     imgMini3.classList.add("img-mini-act");
     imgMini4.classList.remove("img-mini-act");
   });
-  imgMini1.addEventListener("click", function(){
+  imgMini4.addEventListener("click", function(){
     imgBox.setAttribute("src", "img/image-product-4.jpg");
     boxImgMini1.classList.remove("box-img-mini");
     boxImgMini2.classList.remove("box-img-mini");
-    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini3.classList.remove("box-img-mini");
     boxImgMini4.classList.add("box-img-mini");
     imgMini1.classList.remove("img-mini-act");
     imgMini2.classList.remove("img-mini-act");
     imgMini3.classList.remove("img-mini-act");
     imgMini4.classList.add("img-mini-act");
   });
-imgMini2.addEventListener("click", function(){
-  imgBox.setAttribute("src", "img/image-product-2.jpg");
-});
-imgMini3.addEventListener("click", function(){
-    imgBox.setAttribute("src", "img/image-product-3.jpg");
-  });
-  imgMini4.addEventListener("click", function(){
-    imgBox.setAttribute("src", "img/image-product-4.jpg");
-  });
 
+  let btnRestar= document.getElementById("btnRestar");
+  let cantBox = document.getElementById("cantBox");
+  let btnSumar  = document.getElementById("btnSumar");
+  let btnCantidad  = document.getElementById("btnCantidad");
+  let numeroElementos = document.getElementById("numeroElementos");
+  
+
+  btnSumar.addEventListener("click", function () {
+
+   let numeroElementostxt = document.getElementById("numeroElementos").innerHTML;
+
+  let numeroElementosInt = parseInt(numeroElementostxt);
+  let totalElementosInt = numeroElementosInt + 1;
+  let totalElementostxt = totalElementosInt.toString();
+  numeroElementos.innerHTML = totalElementostxt;
+
+  });
