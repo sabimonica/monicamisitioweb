@@ -60,15 +60,23 @@ imgMini1.addEventListener("click", function(){
   let btnSumar  = document.getElementById("btnSumar");
   let btnCantidad  = document.getElementById("btnCantidad");
   let numeroElementos = document.getElementById("numeroElementos");
+  let click=0;
   
 
   btnSumar.addEventListener("click", function () {
+  if (click==30) {
+    click=30;
+  }else{
+    click=click + 1
+    numeroElementos.innerHTML =click
+  }
+  })
 
-   let numeroElementostxt = document.getElementById("numeroElementos").innerHTML;
-
-  let numeroElementosInt = parseInt(numeroElementostxt);
-  let totalElementosInt = numeroElementosInt + 1;
-  let totalElementostxt = totalElementosInt.toString();
-  numeroElementos.innerHTML = totalElementostxt;
-
+  btnRestar.addEventListener("click", function (){
+  if (click==0) {
+      click = 0;
+  }else{
+    click = click -1
+    numeroElementos.innerHTML =click
+  }
   });

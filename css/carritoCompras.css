@@ -1,5 +1,8 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    
 }
 h1 {
     text-align: center;
@@ -75,3 +78,79 @@ cursor: pointer;
     color: rgb(48, 48, 48);
     font-size: 1.3em;
 }
+
+
+.info {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 90px 0px 90px 90px;
+}
+
+.subt {
+    color: orange;
+    font-weight: bold;
+}
+.titulo {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.bottom {
+    margin-bottom: 15px;
+}
+.number-flex {
+    display: inline-flex;
+    gap: 15px;
+}
+.number {
+    font-size: 2em;
+    font-weight: bold;
+}
+.dto {
+    margin-top: 7px;
+    border-radius: 5px;
+    background-color: rgb(255, 226, 205);
+    color: rgb(248, 103, 7);
+    font-weight: bold;
+    height: 25px;
+    padding: 5px;
+}
+.before {
+    color: gray;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 81, 0);
+}
+.add {
+    border-radius: 8px;
+    border: none;
+    height: 58px;
+    margin-left: 30px;
+    width: 270px;
+    background-color: rgb(255, 123, 0);
+}
+.add:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.txt-add {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.car{
+    margin-right: 20px;
+    height: 25px;
+ 
+    width: 30PX;
+}
+.txt{
+    color: rgb(114, 139, 163);
+}
+
+
+
