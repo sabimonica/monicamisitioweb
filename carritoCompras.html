@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de compras</title>
     <link rel="stylesheet" href="css/carritoCompras.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="stylesheet" href="icons/flexbox.css">
  </head>
  <body> 
+  <div id="lightBox" class="lightbox light-hidden">
+     <div class="main-lightbox">
+         <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+         <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+         <img class="img-main-light" src="img/image-product-1.jpg" alt="">
+        
+     </div>
+   </div>
+
   <h1>CARRITO DE COMPRAS</h1>
 <div class="box-main">
     <div class="img-box-main">
@@ -26,25 +37,14 @@
       </div>
 
       <div id="boxImgMini4" class="box-img-4">
-       <img id="imgMini4" class="img-mini" src="img/image-product-4-mini.jpg" alt="mini-4"></div>
+       <img id="imgMini4" class="img-mini" src="img/image-product-4-mini.jpg" alt="mini-4">
       </div>
-
-     <div class="info">
-      <p class="subt">SNEAKER COMPANY</p>
-      <h3 class="titulo">Fall Limited Edition <br> Sneakers</h3>
-      <p class="txt bottom">These low-profile sneakers are your perfect casual wear <br> companion. Featuring a durable rubber outer sole, they'll <br> withstand everything the weather can offer</p>
-
-    <div class="number-flex">
-        <p class="number bottom">$125.00
-        <p class="dto">50%</p>
-        </p>
     </div>
-
-    <p class="before bottom">$250.00</p>
-        <div class="buttons">
-
-
      <div class="buy-box">
+        <div id="Totales" class="totales">
+            <div id="valorTotal" class="valor-total">$199.00</div>
+        </div>
+      
         <div id="cantBox" class="cant-box">
         <div id="btnRestar" class="icon btn-restar">-</div>
         <div id="btnCantidad" class="icon cant-obj"><span id="numeroElementos">0</span></div>
@@ -56,8 +56,7 @@
         </button>
     </div>
    </div>
-</div>
-</div>
+ </div>
 </div>
 
 <script src="js/carrito.js"></script>

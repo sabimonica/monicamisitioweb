@@ -2,7 +2,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
-    
 }
 h1 {
     text-align: center;
@@ -67,63 +66,28 @@ border: 2px solid whitesmoke;
     display: flex;
     flex-direction: row;
 }
-.btn-restar, .btn-sumar{
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-color:rgb(255, 125, 26) ;
-font-size: 2.5em;
-cursor: pointer;
+.btn-restar{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+.btn-sumar{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
+.btn-restar, .btn-sumar{
+    color:rgb(255, 125, 26) ;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+
 .cant-obj{
     color: rgb(48, 48, 48);
     font-size: 1.3em;
 }
-
-
-.info {
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 90px 0px 90px 90px;
-}
-
-.subt {
-    color: orange;
+.valor-total{
+    font-size: 1.6em;
     font-weight: bold;
-}
-.titulo {
-    font-size: 3em;
-    margin-bottom: 15px;
-}
-.bottom {
-    margin-bottom: 15px;
-}
-.number-flex {
-    display: inline-flex;
-    gap: 15px;
-}
-.number {
-    font-size: 2em;
-    font-weight: bold;
-}
-.dto {
-    margin-top: 7px;
-    border-radius: 5px;
-    background-color: rgb(255, 226, 205);
-    color: rgb(248, 103, 7);
-    font-weight: bold;
-    height: 25px;
-    padding: 5px;
-}
-.before {
-    color: gray;
-    font-weight: bold;
-    text-decoration: line-through;
-}
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 81, 0);
 }
 .add {
     border-radius: 8px;
@@ -145,12 +109,55 @@ cursor: pointer;
 .car{
     margin-right: 20px;
     height: 25px;
- 
     width: 30PX;
 }
-.txt{
-    color: rgb(114, 139, 163);
+
+.lightbox{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 64, 64,.8);
+    height: 100%;
+    width: 200vh;
 }
-
-
-
+.light-hidden{
+    display: none;
+}
+.main-lightbox{
+    width: 450px;
+    height: 600px;
+    background-color:rgb(114, 139, 163) ;
+}
+.btn-style{
+ border-radius: 50%;
+ width: 46px;
+ height: 46px; 
+ background-color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: black;
+ position: relative;
+ top:198px;
+}
+.btn-atras{
+ left: -4%;
+ z-index: 20;
+}
+.btn-adelante{
+    left: 94%;
+    z-index: 20;
+    top: 236px;
+}
+.style-btn{
+font-weight: 900;
+font-size: 1.3em;
+}
+.img-main-light{
+position: relative;
+top: -88px;
+width: 100%;
+border-radius: 20px;
+z-index: 10;
+}

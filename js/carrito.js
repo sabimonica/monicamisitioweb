@@ -54,29 +54,50 @@ imgMini1.addEventListener("click", function(){
     imgMini3.classList.remove("img-mini-act");
     imgMini4.classList.add("img-mini-act");
   });
-
+/*inicializacion de varibles*/
   let btnRestar= document.getElementById("btnRestar");
   let cantBox = document.getElementById("cantBox");
   let btnSumar  = document.getElementById("btnSumar");
   let btnCantidad  = document.getElementById("btnCantidad");
   let numeroElementos = document.getElementById("numeroElementos");
-  let click=0;
-  
+
+/*valor unitario y total*/
+  let valorUnitario = 199000;
+  let valorUnitarioTxt = valorUnitario.toString();
+/* P.O.O (programacion orientada a objetos)*/
+  let valorUnitariopeso = new Intl.NumberFormat().format(valorUnitario);
+  let valorTotal = document.getElementById("valorTotal");
+  /*inicializacion de varibles*/
+  let valorTotalInt = 0;
 
   btnSumar.addEventListener("click", function () {
-  if (click==30) {
-    click=30;
-  }else{
-    click=click + 1
-    numeroElementos.innerHTML =click
-  }
-  })
+    let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+    let numeroElementosInt = parseInt(numeroElementosTxt);
+    if(numeroElementosInt < 10){
+      let totalElementosInt = numeroElementosInt + 1;
+      let totalElementostxt= totalElementosInt.toString();
+      numeroElementos.innerHTML =totalElementostxt;
+      valorTotalInt = valorUnitario * totalElementosInt;
+      valorTotal.innerHTML ="$" + Intl.NumberFormat().format(valorTotalInt);
+    
+    }
+  });
 
   btnRestar.addEventListener("click", function (){
-  if (click==0) {
-      click = 0;
-  }else{
-    click = click -1
-    numeroElementos.innerHTML =click
+  let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+  let numeroElementosInt = parseInt (numeroElementosTxt);
+  if (numeroElementosInt >  0) {
+    let totalElementosInt = numeroElementosInt -1;
+    let totalElementostxt = totalElementosInt.toString();
+    numeroElementos.innerHTML = totalElementostxt;
+    valorTotalInt = valorUnitario * totalElementosInt;
+    valorTotal.innerHTML ="$" + Intl.NumberFormat().format(valorTotalInt);
   }
   });
+    /*lightbox*/
+    let lightBox = document.getElementById("lightBox");
+
+imgBox.addEventListener("click", function(){
+lightBox.classList.remove("light-hidden");
+    });
+
