@@ -198,4 +198,212 @@ lightBox.classList.remove("light-hidden");
 salir.addEventListener("click", function(){
 lightBox.classList.add("light-hidden")
 });
+// botones de accion
+let contAd = 0;
+let contAt = 5;
+
+let btnAdelante = document.getElementById("adelante");
+
+btnAdelante.addEventListener("click", function () {
+  contAd = contAd + 1;
+  if (contAt < 4) {
+    contAd = contAt;
+    contAd = contAd + 1
+  }
+  if (contAt == 0 ) {
+    contAd = contAd + 1;
+  }
+  contAt = 5;
+
+  if (contAt == 1) {
+    
+  }
+  if (contAd == 1) {
+    imgBoxSecond.setAttribute("src", "img/image-product-1.jpg");
+    Mini1.classList.add("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini4.classList.remove("box-img-mini");
+    img1.classList.add("img-mini-act");
+    img2.classList.remove("img-mini-act");
+    img3.classList.remove("img-mini-act");
+    img4.classList.remove("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-1.jpg");
+    boxImgMini1.classList.add("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini4.classList.remove("box-img-mini");
+    imgMini1.classList.add("img-mini-act");
+    imgMini2.classList.remove("img-mini-act");
+    imgMini3.classList.remove("img-mini-act");
+    imgMini4.classList.remove("img-mini-act");
+  }
+
+  if (contAd == 2) {
+    imgBoxSecond.setAttribute("src", "img/image-product-2.jpg");
+    Mini1.classList.remove("box-img-mini");
+    Mini2.classList.add("box-img-mini");
+    Mini3.classList.remove("box-img-mini");
+    Mini4.classList.remove("box-img-mini");
+    img1.classList.remove("img-mini-act");
+    img2.classList.add("img-mini-act");
+    img3.classList.remove("img-mini-act");
+    img4.classList.remove("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-2.jpg");
+    boxImgMini1.classList.remove("box-img-mini");
+    boxImgMini2.classList.add("box-img-mini");
+    boxImgMini3.classList.remove("box-img-mini");
+    boxImgMini4.classList.remove("box-img-mini");
+    imgMini1.classList.remove("img-mini-act");
+    imgMini2.classList.add("img-mini-act");
+    imgMini3.classList.remove("img-mini-act");
+    imgMini4.classList.remove("img-mini-act");
+  }
+
+  if (contAd == 3) {
+    imgBoxSecond.setAttribute("src", "img/image-product-3.jpg");
+    Mini1.classList.remove("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini3.classList.add("box-img-mini");
+    Mini4.classList.remove("box-img-mini");
+    img1.classList.remove("img-mini-act");
+    img2.classList.remove("img-mini-act");
+    img3.classList.add("img-mini-act");
+    img4.classList.remove("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-3.jpg");
+    boxImgMini1.classList.remove("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini3.classList.add("box-img-mini");
+    boxImgMini4.classList.remove("box-img-mini");
+    imgMini1.classList.remove("img-mini-act");
+    imgMini2.classList.remove("img-mini-act");
+    imgMini3.classList.add("img-mini-act");
+    imgMini4.classList.remove("img-mini-act");
+  }
+  if (contAd == 4) {
+    imgBoxSecond.setAttribute("src", "img/image-product-4.jpg");
+    Mini1.classList.remove("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini3.classList.remove("box-img-mini");
+    Mini4.classList.add("box-img-mini");
+    img1.classList.remove("img-mini-act");
+    img2.classList.remove("img-mini-act");
+    img3.classList.remove("img-mini-act");
+    img4.classList.add("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-4.jpg");
+    boxImgMini1.classList.remove("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini3.classList.remove("box-img-mini");
+    boxImgMini4.classList.add("box-img-mini");
+    imgMini1.classList.remove("img-mini-act");
+    imgMini2.classList.remove("img-mini-act");
+    imgMini3.classList.remove("img-mini-act");
+    imgMini4.classList.add("img-mini-act");
+
+    contAd = 0;
+  }
+})
+
+let btnAtras = document.getElementById("atras")
+
+btnAtras.addEventListener("click", function () {
+  if (contAd > 1) {
+    contAt = contAd;
+    console.log("BTN ATRAS " + contAt)
+    console.log("BTN ADE " + contAd)
+    contAt = contAt - 1;
+    console.log("CONT ATRAS " + contAt)
+  }
+  if (contAd == 0) {
+    contAt = contAt - 1;
+  }
+  contAd = 0;
+  // console.log(contAt)
+
+  if (contAt == 4) {
+    imgBoxSecond.setAttribute("src", "img/image-product-4.jpg");
+    Mini1.classList.remove("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini4.classList.add("box-img-mini");
+    img1.classList.remove("img-mini-act");
+    img2.classList.remove("img-mini-act");
+    img3.classList.remove("img-mini-act");
+    img4.classList.add("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-4.jpg");
+    boxImgMini1.classList.remove("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini4.classList.add("box-img-mini");
+    imgMini1.classList.remove("img-mini-act");
+    imgMini2.classList.remove("img-mini-act");
+    imgMini3.classList.remove("img-mini-act");
+    imgMini4.classList.add("img-mini-act");
+
+  }
+
+  if (contAt == 3) {
+    imgBoxSecond.setAttribute("src", "img/image-product-3.jpg");
+    Mini1.classList.remove("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini3.classList.add("box-img-mini");
+    Mini4.classList.remove("box-img-mini");
+    img1.classList.remove("img-mini-act");
+    img2.classList.remove("img-mini-act");
+    img3.classList.add("img-mini-act");
+    img4.classList.remove("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-3.jpg");
+    boxImgMini1.classList.remove("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini3.classList.add("box-img-mini");
+    boxImgMini4.classList.remove("box-img-mini");
+    imgMini1.classList.remove("img-mini-act");
+    imgMini2.classList.remove("img-mini-act");
+    imgMini3.classList.add("img-mini-act");
+    imgMini4.classList.remove("img-mini-act");
+  }
+
+  if (contAt == 2) {
+    imgBoxSecond.setAttribute("src", "img/image-product-2.jpg");
+    Mini1.classList.remove("box-img-mini");
+    Mini2.classList.add("box-img-mini");
+    Mini3.classList.remove("box-img-mini");
+    Mini4.classList.remove("box-img-mini");
+    img1.classList.remove("img-mini-act");
+    img2.classList.add("img-mini-act");
+    img3.classList.remove("img-mini-act");
+    img4.classList.remove("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-2.jpg");
+    boxImgMini1.classList.remove("box-img-mini");
+    boxImgMini2.classList.add("box-img-mini");
+    boxImgMini3.classList.remove("box-img-mini");
+    boxImgMini4.classList.remove("box-img-mini");
+    imgMini1.classList.remove("img-mini-act");
+    imgMini2.classList.add("img-mini-act");
+    imgMini3.classList.remove("img-mini-act");
+    imgMini4.classList.remove("img-mini-act");
+  }
+  if (contAt == 1) {
+    imgBoxSecond.setAttribute("src", "img/image-product-1.jpg");
+    Mini1.classList.add("box-img-mini");
+    Mini2.classList.remove("box-img-mini");
+    Mini3.classList.remove("box-img-mini");
+    Mini4.classList.remove("box-img-mini");
+    img1.classList.add("img-mini-act");
+    img2.classList.remove("img-mini-act");
+    img3.classList.remove("img-mini-act");
+    img4.classList.remove("img-mini-act");
+    imgBox.setAttribute("src", "img/image-product-1.jpg");
+    boxImgMini1.classList.add("box-img-mini");
+    boxImgMini2.classList.remove("box-img-mini");
+    boxImgMini3.classList.remove("box-img-mini");
+    boxImgMini4.classList.remove("box-img-mini");
+    imgMini1.classList.add("img-mini-act");
+    imgMini2.classList.remove("img-mini-act");
+    imgMini3.classList.remove("img-mini-act");
+    imgMini4.classList.remove("img-mini-act");
+
+    contAt = 5;
+  }
+})
 
