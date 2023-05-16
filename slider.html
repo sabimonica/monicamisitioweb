@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slider</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="icons/all.css">
+    
+
 </head>
 <body>
     <div class="main-content">
-        <div class="main-menu">
-            <img class="logo" src="img/Sin título.png" alt="">
-                <div class="style-li"><a class="style-item" href="#">Vendido</a></div>
-                <div class="style-li"><a class="style-item" href="#">Ocasiones</a> </div>
-                <div class="style-li"><a class="style-item" href="#">Flores</a></div>
-                <div class="style-li"><a class="style-item" href="#">Precios</a> </div>
-        </div>
-        <div class="box-marco">
-            <img id="imgCont" class="img-lotus" src="img/img1.jpg" alt="">
-            <div class="nex top" id="btnNex"><i class="fa-solid fa-circle-chevron-right"></i></div>
-            <div class="before top" id="btnBefore"><i class="fa-solid fa-circle-chevron-left"></i></div>
-        </div>
         <div class="empty-left"></div>
-        <div class="empty-right"></div>
+        <nav class="main-nav">
+            <div class="logo-box">
+                <img class="img-logo" src="img/Sin título.png" alt="logo Flores">
+            </div>
+          
+         <ul class="main-ul">
+            <li class="style-li"><a class="style-item" href="#">Mas vendido </a></li>
+            <li class="style-li"><a class="style-item" href="#">Ocaciones</a></li>
+            <li class="style-li"><a class="style-item" href="#">Flores</a></li>
+            <li class="style-li"><a class="style-item" href="#">Precios</a></li>
+            <div class="logo-box">
+         </ul>
+        </nav>    
+            
+        <div class="box-marco">
+            <div id="leftAroow" class="flecha-atras " ><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div id="leftAdelante" class="flecha-adelante" ><i class="fa-solid fa-circle-chevron-right"></i></div>
+
+            <img id="imgToyotaCamry"  class="img-toyota-camry" src="img/roses1-3792147_1280.jpg" alt="Toyota">
+            <img id="imgToyotaTundra" class="img-toyota-tundra-hidden-right"  src="img/roses2-3792147_1280.jpg" alt="Toyota">
+            <img id="imgToyotaRav4"   class="img-toyota-rav4-hidden-right" src="img/roses3-3792147_1280.jpg" alt="Toyota">
+            <img id="imgToyotaFlower" class="img-toyota-flower-hidden-right" src="img/roses4-3792147_1280.jpg" alt="">
         
+        </div>
+        <div class="empty-right"></div>
+
     </div>
-  <script src="js/slider.js"></script>
+
+
+    </div>
+    <script src="js/slider.js"></script>
+
 </body>
 </html>

@@ -1,55 +1,31 @@
-let bntnet = document.querySelector('#btnNex');
-let btnbefore = document.querySelector('#btnBefore');
-let contimg = document.querySelector('#imgCont');
-contador = 3;
-function sumar() {
-    contador++
-    if (contador == 4) {
-        contador =1;
-    }
-    anime();
-}
-function restar() {
-    contador--
-    if (contador == 0) {
-        contador = 3;
-    }
-    anime();
-}
-
-function anime() {
-    if (contimg.classList.contains('animation')) {
-        contimg.classList.add('animation2');
-        contimg.classList.remove('animation');
-    }else{
-        contimg.classList.remove('animation2');
-        contimg.classList.add('animation');
-    }
-    setTimeout(() => {
-        proyectar();
-    }, 500);
-}
-function proyectar() {
-    if (contador == 3) {
-        img1();
-    }
-    if (contador == 1) {
-        img2();
-    }
-    if (contador == 2) {
-        ima3();
-    }
-}
-function img1() {
-    contimg.setAttribute('src', ('img/img2.jpg'));
-}
-function img2() {
-    contimg.setAttribute('src', ('img/img3.jpg'));
-}
-function ima3() {
-    contimg.setAttribute('src', ('img/img4.jpg'));
-}
+let lefArrow = document.getElementById("leftAroow");
+let imgToyotaCamry = document.getElementById("imgToyotaCamry");
+let imgToyotaTundra = document.getElementById("imgToyotaTundra");
+let imgToyotaRav4 = document.getElementById('imgToyotaRav4');
+let imgToyotaFlower = document.getElementById("imgToyotaFlower");
 
 
-btnbefore.addEventListener('click', restar);
-bntnet.addEventListener('click', sumar);
+
+lefArrow.addEventListener("click", function () {
+    if (imgToyotaCamry.classList.contains("img-toyota-camry")) {
+        imgToyotaCamry.classList.remove("img-toyota-camry");
+        imgToyotaCamry.classList.add("img-toyota-camry-hidden");
+        imgToyotaTundra.classList.remove("img-toyota-tundra");
+        imgToyotaTundra.classList.remove("img-toyota-tundra-hidden-right");
+        imgToyotaRav4.classList.add("img-toyota-rav4");
+        imgToyotaRav4.classList.remove("img-toyota-rav4-hidden-right");
+
+        
+
+
+    }
+    else if (imgToyotaRav4.classList.contains("img-toyota-rav4")) {
+        imgToyotaRav4.classList.remove("img-toyota-rav4");
+        imgToyotaRav4.classList.add("img-toyota-rav4-hidden-right");
+        imgToyotaFlower.classList.add("img-toyota-flower");
+        imgToyotaFlower.classList.remove("img-toyota-flower-hidden-right");
+        
+       
+    }
+
+});
