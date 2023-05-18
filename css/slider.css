@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow: auto;
 }
-.main-nav{
+
+.main-nav {
+    position: absolute;
     width: 100%;
     height: 55px;
-    background-color: rgb(51, 163, 84);
-    z-index:  30;
-  }
+    z-index: 30;
+}
+
 /* .main-content{
    display: grid;
    grid-template:"empty-left  main-nav    empty-right"
@@ -16,60 +18,72 @@
                  "empty-left  iconos      empty-right" /
                     1fr       1439px        1fr
 } */
-.box-marco{
-    grid-area: box-marco;;
+.box-marco {
+    grid-area: box-marco;
+    ;
 }
-.empty-left{
+
+.empty-left {
     grid-area: empty-left;
     background-color: rgb(150, 35, 228);
 }
-.empty-right{
+
+.empty-right {
     grid-area: empty-right;
     background-color: rgb(98, 24, 148);
 }
-.main-nav{
+
+.main-nav {
     grid-area: main-nav;
 }
-.logo-box{
+
+.logo-box {
     float: left;
 }
-.img-logo{
+
+.img-logo {
     height: 40px;
     margin-top: 10px;
     margin-left: 50px;
 }
-.main-ul{
+
+.main-ul {
     list-style: none;
     font-size: 1.3em;
     margin-top: 15px;
     margin-right: 40px;
     text-align: right;
 }
-.style-li{
-    display: inline-block; 
+
+.style-li {
+    display: inline-block;
 }
-.style-item{
-color: rgb(245, 237, 237);
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-weight: 600;
-text-decoration: none;
-padding: 15px 25px 0 25px ;
+
+.style-item {
+    color: rgb(245, 237, 237);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 25px 0 25px;
 }
-.img-toyota-camry{
+
+.img-toyota-camry {
     width: 100%;
     position: fixed;
     z-index: 10;
     left: 0;
     transition: left 2s;
 }
-.img-toyota-camry-hidden{
+
+.img-toyota-camry-hidden {
     width: 100%;
-     position: fixed;
-     z-index: 10;
-     left: -100%;
-     transition: left 2s;
- }
-.img-toyota-tundra{
+    position: fixed;
+    z-index: 10;
+    left: -100%;
+    transition: left 2s;
+}
+
+.img-toyota-tundra {
     width: 100%;
     grid-area: img-toyota;
     position: fixed;
@@ -78,35 +92,39 @@ padding: 15px 25px 0 25px ;
     transition: left 2s;
 }
 
-.img-toyota-tundra-hidden-left{
+.img-toyota-tundra-hidden-left {
     width: 100%;
     position: fixed;
     z-index: 10;
     left: -100%;
     transition: left 2s;
 }
-.img-toyota-tundra-hidden-right{
-   width: 100%;
+
+.img-toyota-tundra-hidden-right {
+    width: 100%;
     position: fixed;
     z-index: 10;
     left: 100%;
     transition: left 2s;
 }
-.img-toyota-rav4{
+
+.img-toyota-rav4 {
     width: 100%;
     position: fixed;
     z-index: 10;
     left: 0;
     transition: left 2s;
 }
-.img-toyota-rav4-hidden-right{
+
+.img-toyota-rav4-hidden-right {
     width: 100%;
     position: fixed;
     z-index: 10;
     left: 100%;
     transition: left 2s;
 }
-.img-toyota-flower{
+
+/* .img-toyota-flower{
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -119,13 +137,14 @@ padding: 15px 25px 0 25px ;
     z-index: 10;
     left: 100%;
     transition: left 2s;
-}
-.iconos{
+} */
+.iconos {
     grid-area: iconos;
     height: 500px;
 }
-.flecha-adelante{ 
-   
+
+.flecha-adelante {
+
     top: 46vh;
     position: fixed;
     right: 40px;
@@ -133,20 +152,21 @@ padding: 15px 25px 0 25px ;
     color: white;
     z-index: 20;
 }
-.flecha-adelante:hover{
+
+.flecha-adelante:hover {
     cursor: pointer;
 }
-.flecha-atras{
+
+.flecha-atras {
     left: 50px;
     top: 46vh;
     position: fixed;
     z-index: 20;
     font-size: 40px;
     color: white;
-    
+
 }
-.flecha-atras:hover{
+
+.flecha-atras:hover {
     cursor: pointer;
 }
-
-
