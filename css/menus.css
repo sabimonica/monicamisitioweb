@@ -9,14 +9,11 @@ nav{
 ul{
     list-style: none;
     padding: 5px;
-    
 }
 a{
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:13px;
-    
-
 }
 ul{
     border: 1px solid transparent;
@@ -35,5 +32,9 @@ margin-bottom: 5px;
 i{
     padding-right: 10px;
 }
+
+
+
+
 
 
