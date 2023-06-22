@@ -54,7 +54,7 @@ let num1float = parseFloat(num1Int);
 let num3float = parseFloat(num3Str);
 let num5float = 5.3;
 console.log("Valores: " + num1float + " + " + num3float + " + " + num5float);
-/*Es importante colocar los parentecis al momento en el momento de queres hacer una operacion de suma,resta... */
+/*Es importante colocar los parentecis al momento en el momento de queres hacer una operacion de suma,resta...*/
 console.log("Resultado: " + (num1float + num3float + num5float));
 
 /*De Decimal a Entero */
@@ -78,3 +78,41 @@ console.log("Convercion de decimal a Entero con ajustes hacia el techo: " + num6
 // let for = 5;
 // let swich = "Deporte";
 // let while = 12.5;
+
+/* Operadores aritmeticos*/
+console.log("Operadores Aritmeticos");
+let numArit1 = 9;
+let numArit2 = 6;
+
+console.log("Suma: ");
+console.log("numArit1 (9) + numArit2 (6): " + (numArit1 + numArit2));
+
+console.log("Resta: ");
+console.log("numArit2 (6) - numArit1 (9): " + (numArit2 - numArit1));
+
+console.log("Multiplicacion: ");
+console.log("numArit2 (6) * numArit1 (9): " + (numArit2 * numArit1));
+
+console.log("Divicion: ");
+let resuldivi = numArit1 / numArit2;
+console.log("numArit1 (9) / numArit2 (6): " + (numArit1 / numArit2));
+
+console.log("Redondear numeros: ");
+/*Para sacar el reciduo */
+console.log("Residuo: " + (numArit1 % numArit2));
+
+/*Redondea el resultado de la divion para que no me de tantos numeros despues del punto*/
+console.log("Redondear promedio....");
+console.log(Math.round(resuldivi));
+/*Redondea el resultado de la vicion asia abajo */
+console.log("Redondear hacia bajo....");
+console.log(Math.floor(resuldivi));
+/*Redondea el resultado de la vicion asia arriba*/
+console.log("Redondear hacia arriba....");
+console.log(Math.ceil(resuldivi));
+
+
+
+
+
+
