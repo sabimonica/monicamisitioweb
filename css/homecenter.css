@@ -1,0 +1,59 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100;
+}
+.box-header{
+    width: 100px;
+    height: 70px;
+    display: grid;
+    grid-template:"menu-hamburguer   img-logo   icono-lupa   circle   icono-user" 70px/
+                     60px             150px     1fr      100px      100px;
+                     
+}
+.style-hamburguer{
+    color: green;
+    font-size: 3em;
+}
+.menu-hamburguer{
+    grid-area: menu-hamburguer;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.img-logo{
+    grid-area: menu-hamburguer;
+    width: 100px;
+}
+.icono-lupa{
+    grid-area: icono-lupa;
+    width: 100%;
+    text-align: right;
+    background-color: brown;
+}
+.circle{
+    grid-area: circle;
+}
+.carrito-compras{
+    grid-area: carrito-compras;
+    width: 60px;
+}
+.icono-user{
+    grid-area: icono-user;
+    width: 60px;
+}
+.icono-homecenter{
+    width: 50px;
+    position: relative;
+}
+.img-lupa{
+   width: 60px; 
+}
+.box-header-2{
+    width: 100%;
+    height: 100px;
+}
+
