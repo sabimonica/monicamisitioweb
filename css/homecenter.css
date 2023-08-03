@@ -11,8 +11,7 @@ img{
     height: 70px;
     display: grid;
     grid-template:"menu-hamburguer   img-logo   icono-lupa   circle   icono-user" 70px/
-                     60px             150px     1fr      100px      100px;
-                     
+                     60px             150px     1fr      100px      100px;            
 }
 .style-hamburguer{
     color: green;
