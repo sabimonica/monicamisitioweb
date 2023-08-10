@@ -16,7 +16,6 @@ img{
     display: none;
 }
 .style-hamburguer{
-    color: green;
     font-size: 2em;
 }
 .menu-hamburguer{
@@ -63,7 +62,7 @@ img{
 .box-header-2{
     width: 100%;
     height: 100px;
-    background-color: darkcyan;
+
 }
 .box-header-2-hidden{
     display: none;
