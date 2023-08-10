@@ -1,18 +1,29 @@
-let idLupa = document.getElementById("idLupa");
-let boxHeader1 = document.getElementById("boxHeader1");
-let boxHeader2 = document.getElementById("boxHeader2");
-let idExit = document.getElementById("idExit");
+let searcher = document.getElementById("inputMobile");
+let inputSearch = document.getElementById("inputSearchMobile");
+let magnifier = document.getElementById("magnifSearch");
+let magnifIcon = document.getElementById("magnifSearch");
+let exit = document.getElementById("exitSearch");
 
-idLupa.addEventListener("click",function(){
-    boxHeader1.classList.add("box-header1-hidden");
-    boxHeader1.classList.remove("box-header-1");
-    boxHeader2.classList.remove("box-header-2-hidden");
-    boxHeader2.classList.add("box-header-2")
-});
-idExit.addEventListener("click",function(){
-    boxHeader1.classList.remove("box-header1-hidden");
-    boxHeader1.classList.add("box-header-1");
-    boxHeader2.classList.add("box-header-2-hidden");
-    boxHeader2.classList.remove("box-header-2")
-});
+magnifier.addEventListener("click", function () {
+    searcher.classList.remove("container-input-mobile-none");
+    searcher.classList.add("container-input-mobile");
+    inputSearch.classList.remove("input-mobile-none");
+    inputSearch.classList.add("input-mobile");
+    setTimeout(() => {
+        searcher.classList.add("transition");
+        inputSearch.classList.add("transition");
+    }, "1")
+    // inputSearch.style.transition = "all 1s ease"; 
+})
+exit.addEventListener("click", function () {
+    searcher.classList.remove("container-input-mobile");
+    searcher.classList.add("container-input-mobile-none");
+    searcher.classList.remove("transition");
+    inputSearch.classList.remove("transition");
+
+})
+
+
+
+
 

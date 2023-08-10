@@ -1,76 +1,166 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
 }
-img{
+
+.container-nav {
     width: 100%;
-}
-.box-header-1{
-    width: 100%;
-    height: 70px;
+    /* height: 100px; */
+    box-shadow: 0px 0px 2px 0px black;
     display: grid;
-    grid-template:"menu-hamburguer   img-logo   icono-lupa   circle   carrito-compras cmr  icono-user" 70px/
-                     60px             150px     1fr          75px     75px            75px  75px;            
+    align-items: center;
+    grid-template: 100px /1fr 250px 37% 150px 75px 150px 150px 1fr;
 }
-.box-header1-hidden{
-    display: none;
+
+.container-searcher input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    width: 100%;
 }
-.style-hamburguer{
-    font-size: 2em;
-}
-.menu-hamburguer{
-    grid-area: menu-hamburguer;
+
+.container-searcher svg {
     position: relative;
-    left: 20px;
-    top: 20px;
+    right: 40px;
 }
-.img-logo{
-    grid-area: img-logo;
-    width: 100%;
+
+.container-account,
+.container-cmr,
+.container-location,
+.container-searcher,
+.container-shop {
+    display: flex;
+    align-items: center;
 }
-.icono-lupa{
-    grid-area: icono-lupa;
-    width: 100%;
-    text-align: right;
+
+.img-points {
+    width: 40px;
+    margin-right: 5px;
 }
-.circle{
-    grid-area: circle;
-    width: 60px;
+
+.txt-items {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.carrito-compras{
-    grid-area: carrito-compras;
-    width: 60px;
+
+.container-location svg {
+    height: 60px;
+    width: 41px;
+    margin-left: 10px;
+    /* background-color: rebeccapurple; */
 }
-.cmr{
-    grid-area: cmr;
-    width: 60px;
+
+.container-shop div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 0, 33);
 }
-.icono-user{
-    grid-area: icono-user;
-    width: 60px;
+
+.container-shop div p {
+    color: whitesmoke;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
-.icono-homecenter{
-    width: 60px;
-    position: relative;
-    top: 20px;
-    left: 10px;
-}
-.img-lupa{
-   width: 60px; 
-   cursor: pointer;
-}
-.box-header-2{
-    width: 100%;
-    height: 100px;
+
+.img-web {
+    display: block;
 
 }
-.box-header-2-hidden{
+
+.img-mobile {
+    display: none;
+    width: 60px;
+}
+
+.container-hamburger-icon {
     display: none;
 }
-.x-exit{
-    grid-area: x-exit;
-    color: red;
-    text-align: right;
-    margin-right: 20px;
+
+.container-input-mobile-none {
+    display: none;
 }
+
+
+/* MOBILE */
+@media only screen and (max-width:768px) {
+    .container-nav {
+        grid-template: 60px /5vw 9vw 12vw 40vw 20vw 10vw 100%;
+    }
+
+    .container-location,
+    .container-cmr,
+    .txt-items,
+    .img-web {
+        display: none;
+    }
+
+    .img-mobile {
+        width: 30px;
+        display: flex;
+    }
+
+    .container-hamburger-icon {
+        display: flex;
+    }
+
+    .container-hamburger-icon i {
+        font-size: 24px;
+    }
+
+    .container-searcher input {
+        visibility: hidden;
+    }
+
+    .container-searcher svg {
+        cursor: pointer;
+        font-size: 20em;
+    }
+
+    .container-input-mobile {
+        display: flex;
+        align-items: center;
+        width: 0%;
+        height: 55px;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .input-mobile {
+        margin-left: -60px;
+        padding-left: 12%;
+        width: 0%;
+        height: 55px;
+        border: none;
+        outline: none;
+        /* background-color: rgb(255, 255, 255); */
+    }
+
+    .transition {
+        margin-left: 0px;
+        width: 100%;
+        transition: all 0.6s ease;
+    }
+
+    .searcher-input svg,
+    .searcher-input i {
+        position: relative;
+        right: 85%; 
+    }
+
+    .searcher-input i {
+        right: 3%;
+        padding: 5px;
+    }
+
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+        display: none;
+    }
+}
+
+
 
