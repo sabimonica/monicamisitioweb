@@ -1,117 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/portafolio2.css">
+  <title>Mi Portafolio</title>
 </head>
-
 <body>
-    <div>
-        <nav>
-            <ul>
-                <li> Home</li>
-                <li>Mi portafolio</li>
-                <li>Mi aprendizaje
-                  <li>PORTAFOLIO</li>
-                  
-                    <ul>
-                        <li>FUENTES </li>
-                            <ul>
-                                <li><a href="fuenteN.html">Netflix</a></li>
-                                <li><a href="fuenteD.html"> Disney</a></li>
-                                <li><a href="fuenteG.html">Game of thrones</a></li>
-                                <li><a href="fuenteR.html">Horas</a></li>
-                            </ul>
-                        </li>
-
-                        <li> COLORES</li>
-                            <ul>
-                                <li><a href="colores.html">Colores</a></li>               
-                                <li><a href="transition.html">Transiciones</a></li>
-                                <li><a href="span.html">Span</a></li>
-                            </ul>
-                            
-                        <li> ALINEACIONES</li>
-                        <ul>
-                            <li><a href="alineacion.html">Alineacion</a></li>
-                            <li><a href="margins.html"> Margenes</a></li>
-                            <li> <a href="img.html">Imagenes</a></li>
-                            <li><a href="img-2.html">Imagenes2</a></li>
-                            <li><a href="slider.html">Slider</a></li>
-                        </ul>
-                            <li>MENUS</li>
-                            <ul>
-                              <li><a href="proyecto.html">Proyecto-Machines</a></li>
-                                <li><a href="menus.html">Menu</a></li>
-                                <li><a href="menu1.html">Menu 1</a></li>
-                                <li><a href="vertical-horizontal.html">vertical-horizontal</a></li>
-                                <li><a href="menu-subitems.html">Subitems</a></li>
-                                <li><a href="media-query.html">Media-query</a></li>
-                                <li><a href="responsive.html">Responsive</a></li>
-                                <li><a href="carritoCompras.html">Carrito De Compras</a></li>
-                                <li><a href="homecenter.html">Menu Homecenter</a></li>
-                              </ul>
-                                  <li>CONTENEDORES</li>
-                                  <ul>
-                                  <li><a href="sombra.html">Contenedores</a></li>
-                                  </ul>
-
-                                  <li>TABLA</li>
-                                  <ul>
-                                    <li><a href="tabla.html">Tabla</a></li>
-                                  </ul>
-
-                                  <li>INICIO</li>
-                                  <ul>
-                                    <li><a href="form.html">formulario</a></li>
-                                    <li><a href="beggin.html">Inicio</a></li>
-                                  </ul>
-
-                                  <li>POSITION</li>
-                                  <ul>
-                                    <li><a href="position.html">Position</a></li>
-                                    <li><a href="posicionamiento.html">Posicionamiento-Relativo</a></li>
-                                  </ul>
-
-                                  <li>BACKGROUND</li>
-                                  <ul> 
-                                  <li><a href="background.html">background</a></li>
-                                  </ul>
-
-                                  <li>POSICIONAMIENTO,GRAFICA</li>
-                                  <ul>
-                                    <li><a href="flexbox.html">Flexbox</a></li>
-                                  </ul>
-
-                                  <li>CALENDARIO</li>
-                                  <ul>
-                                    <li><a href="calendario.html">Calendario</a></li>
-                                    <li><a href="grid.html">Prueva de Calendario</a></li>
-                                  </ul>
-
-                                  <li>MAQUETAS</li>
-                                  <ul>
-                                    <li><a href="maquetacion.html">Maqueta1</a></li>
-                                  </ul>
-
-                                  <li>VALIDACION</li>
-                                  <ul>
-                                    <li><a href="validacion.html">Validación</a></li>
-                                  </ul>
-
-                                  <li>JAVASCRIPT</li>
-                                  <ul>
-                                    <li><a href="eje-javascript.html">Ejercicios basicos Javascript</a></li>
-                                    <li><a href="javascript-cadenas.html">Ejercicios de Cadena</a></li>
-                                    <li><a href="fechas-js.html">validacion con javascript</a></li>
-                                  </ul>
-                          
-              </ul>
-        </nav>
+  <header>
+    <h1>Mi Portafolio</h1>
+    <p>Bienvenido a mi portafolio personal de proyectos.</p>
+  </header>
+  <section class="apartados">
+    <div class="apartado">
+      <div class="mensaje">
+        <h2>Monica Yulitssa Sabi</h2>
+        <p>¡Hola! Soy prendiz de ADSO con muchos por alcanzar...</p>
+      </div>
+      <div class="foto">
+        <img src="img/WhatsApp Image 2023-08-14 at 4.33.33 PM.jpeg" alt="Foto de Perfil">
+      </div>
     </div>
+    <div class="apartado">
+      <div class="mensaje">
+        <h2>habilidades</h2>
+        <p>Mis habilidades incluyen los suguientes proyectos...</p>
+      </div>
+      <div class="foto">
+        <img src="img/cerebro.webp" alt="Foto de Perfil">
+      </div>
+    </div>
+  </section>
+  <section class="proyectos">
+    <h2 class="proyectoss">Proyectos</h2>
+    <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+      <img src="img/fuentes.jpg" alt="">
+      <div class="proyecto-contenido">
+        <h3>FUENTES</h3>
+        <div class="detalle-proyecto">
+            <ul>
+                <li><a href="fuenteN.html">Netflix</a></li>
+                <li><a href="fuenteD.html"> Disney</a></li>
+                <li><a href="fuenteG.html">Game of thrones</a></li>
+                <li><a href="fuenteR.html">Horas</a></li>
+              </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+      <img src="img/transici.png" alt="">
+      <div class="proyecto-contenido">
+        <h3>TRANSICIONES</h3>
+        <div class="detalle-proyecto">
+            <ul>
+                <li><a href="colores.html">Colores</a></li>
+                <li><a href="transition.html">Transiciones</a></li>
+                <li><a href="span.html">Span</a></li>
+              </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+        <img src="img/ima.png" alt="">
+        <div class="proyecto-contenido">
+          <h3>IMAGENES</h3>
+          <div class="detalle-proyecto">
+            <ul>
+                <li><a href="alineacion.html">Alineacion</a></li>
+                <li><a href="margins.html"> Margenes</a></li>
+                <li> <a href="img.html">Imagenes</a></li>
+                <li><a href="img-2.html">Imagenes2</a></li>
+                <li><a href="slider.html">Slider</a></li>
+                <li><a href="background.html">background</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+    <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+        <img src="img/menus.jpg" alt="">
+        <div class="proyecto-contenido">
+          <h3>MENUS</h3>
+          <div class="detalle-proyecto">
+            <ul>
+                <li><a href="proyecto.html">Proyecto-Machines</a></li>
+                <li><a href="menus.html">Menu-vertical</a></li>
+                <li><a href="menu1.html">Menu-Horizontal</a></li>
+                <li><a href="vertical-horizontal.html">vertical-horizontal</a></li>
+                <li><a href="menu-subitems.html">Menu Subitems</a></li>
+                <li><a href="media-query.html">Menu Media-query</a></li>
+                <li><a href="responsive.html">Menu Responsive</a></li>
+                <li><a href="carritoCompras.html">Menu Carrito De Compras</a></li>
+                <li><a href="homecenter.html">Menu Homecenter</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+        <img src="img/positi.jpg" alt="">
+        <div class="proyecto-contenido">
+          <h3>POSICIONAMIENTO</h3>
+          <div class="detalle-proyecto">
+            <ul>
+                <li><a href="sombra.html">Contenedores-sombra</a></li>
+                <li><a href="position.html">Position</a></li>
+                <li><a href="posicionamiento.html">Posicionamiento-Relativo</a></li>
+                <li><a href="flexbox.html">Flexbox</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+        <img src="img/tabla.jpg" alt="">
+        <div class="proyecto-contenido">
+          <h3>TABLAS</h3>
+          <div class="detalle-proyecto">
+            <ul>
+                <li><a href="tabla.html">Tabla</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="grid.html">Prueva de Calendario</a></li>
+                <li><a href="maquetacion.html">Maqueta1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+        <img src="img/inicio.jpg" alt="">
+        <div class="proyecto-contenido">
+          <h3>INICIOS</h3>
+          <div class="detalle-proyecto">
+            <ul>
+                <li><a href="form.html">formulario</a></li>
+                <li><a href="beggin.html">Inicio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto" onclick="mostrarDetalleProyecto(this)">
+        <img src="img/js.jpg" alt="">
+        <div class="proyecto-contenido">
+          <h3>JAVASCRIPT</h3>
+          <div class="detalle-proyecto">
+            <ul>
+                <li><a href="eje-javascript.html">Ejercicios basicos Javascript</a></li>
+                <li><a href="javascript-cadenas.html">Ejercicios de Cadena</a></li>
+                <li><a href="fechas-js.html">validacion con javascript</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+  <footer class="footer">
+    <p>Correo: yulitssasabirojasm18@gmail.com</p>
+  </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
+
+
