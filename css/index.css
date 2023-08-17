@@ -79,7 +79,7 @@ header {
   display: none;
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px solid #a83434;
+  border-top: 1px solid #232121;
 }
 
 /* Estilos para el pie de página */
@@ -88,6 +88,16 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
+a{
+text-decoration: none;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+ul{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
   
