@@ -97,7 +97,10 @@ li{
   list-style: none;
 }
 ul{
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: black;
+  font-weight: bolder;
 }
 
   
