@@ -173,6 +173,7 @@
     display: grid;
     grid-template: "frm-header" 70px
                    "frm-body"  minmax(150px, 90vh)
+                   "frm-btn" 30px
                    "frm-input" 60px
                    "frm-exit" 80px/
                     406px;     
@@ -204,9 +205,9 @@
     grid-area: frm-body;
     background-color: rgb(234,238,243);
     display: grid;
-    grid-template: "empty-left form-text empty-right"
-                   "empty-left slider    empty-right" /
-                    50px        1fr       40px;
+    grid-template: "empty-left      form-text       empty-right"
+                   "icons-slider    icons-slider    icons-slider" 125px /
+                    50px            1fr              40px;
 }
 .img-ana-II {
     width: 100px;
@@ -220,8 +221,9 @@
     background-color: white;
     width: 250px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     letter-spacing: 0.08em;
+    margin-top: 10px
 }
 .finger-style {
     color: rgb(246, 191, 11);
@@ -232,28 +234,139 @@
     margin-top: 30px;
     letter-spacing: 0.08em;
 }
+/* .box-right-arrow {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+} */
+.img-right-arrow {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
 .reloj-msj {
     font-size: .7em;
     position: relative;
     bottom: 0;
     left: 200px;
 }
+.icons-slider {
+    grid-area: icons-slider;
+    display: grid;
+    grid-template: "box-icon-arrow-left box-main-slider box-icon-arrow-right" /
+                    50px                310px            50px;
+}
+.box-main-slider {
+    grid-area: box-main-slider;
+    width: 310px;
+    overflow: hidden;
+    display: grid;
+    grid-area: "icon-arrow-left slider";
+}
+.box-icon-arrow-left {
+    grid-area: box-icon-arrow-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-icon-arrow-right {
+    grid-area: box-icon-arrow-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-arrow-left {
+    grid-area: icon-arrow-left;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.icon-arrow-left:hover {
+    cursor: pointer;
+}
+.icon-arrow-right {
+    grid-area: icon-arrow-right;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.icon-arrow-right:hover {
+    cursor: pointer;
+}   
+.fa-chevron-left {
+    font-size: 1.1em;
+    color: rgb(0,93,173);
+    font-weight: 900;
+}
+.fa-chevron-right {
+    font-size: 1.1em;
+    color: rgb(0,93,173);
+    font-weight: 900;
+}
 .slider {
+/*     background-color: red;  */
     grid-area: slider;
     font-size: .9em;
+    height: 123px;
+    width: 300px; 
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-left: 50px;
+    flex-flow: column wrap;
+    position: relative;
+}
+.slider-view-1 {
+    transition: all 700ms;
+    right: 50px;
+}
+.slider-view-2 {
+    transition: all 700ms;
+    right: 380px;
+}
+.slider-view-3 {
+    transition: all 700ms;
+    right: 710px;
+}
+.slider-view-4 {
+    transition: all 700ms;
+    right: 1040px;
 }
 .box-slider {
     background-color: white;
-    width: 250px;
+    width: 310px;
     height: 120px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-right: 20px;
+}
+.slider1 {
+    position: relative;
+   /*  right: 300px; */
+}
+.slider2 {
+    position: relative;
+  
+}
+.slider3 {
+
+}
+.slider4 {
+
 }
 .slider-title {
     font-weight: 900;
@@ -277,6 +390,30 @@
     color:  rgb(0,93,173);
     font-weight: 400;
     margin-top: 10px;
+}
+.form-btn {
+    grid-area: frm-btn;
+    background-color: rgb(234,238,243);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5px;
+}
+.box-btn {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(64,64,64);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.btn-select {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(64,64,64);
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .form-input {
     grid-area: frm-input;
@@ -321,58 +458,6 @@
     display: flex;
     justify-content: flex-end;
 }
-
-
-
-/* Fonts... */
-/* lato-100 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 100;
-    src: url('../fonts/lato-v24-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* lato-300 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/lato-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* lato-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-300 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
 
 
 
