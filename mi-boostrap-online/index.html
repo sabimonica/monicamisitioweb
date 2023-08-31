@@ -5,9 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/my-style-bootstrap.css">
   </head>
   <body>
     <h1>Hello, world!</h1>
+    <h2>Ejemplo de uso de colores con bootstrap</h2>
+    <h2 class="text-success">Color primaryo en booststrap</h2>
+    <div class="box-example-colors  bg-danger"></div>
+    <h2>Breakpoint</h2>
+    <div class="box-example-breakpoints text-center  container        bg-success">container</div>
+    <div class="box-example-breakpoints text-center container-sm     bg-danger">container-sm </div>
+    <div class="box-example-breakpoints text-center container-md     bg-success">container-md</div>
+    <div class="box-example-breakpoints text-center container-lg     bg-danger">container-lg</div>
+    <div class="box-example-breakpoints text-center container-xl     bg-success">container-xl</div>
+    <div class="box-example-breakpoints text-center container-xxl    bg-danger">container-xxl</div>
+    <div class="box-example-breakpoints text-center container-fluid  bg-success">container-fluid</div>
+    <h2>GRID</h2>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-1 style-border">
+          Column
+        </div>
+        <div class="col-1 style-border">
+          Column
+        </div>
+        <div class="col-8 style-border">
+          Column
+        </div>
+        <div class="col-2 style-border">
+          Column
+        </div>
+      </div>
+    </div>
+    
+    <h3>GRID 2</h3>
+    <div class="container text-center">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2  style-border">
+          1 of 3
+        </div>
+        <div class="col-md-auto style-border">
+          Variable width content
+        </div>
+        <div class="col col-lg-2 style-border">
+          3 of 3
+        </div>
+      </div>
+      <div class="row style-border">
+        <div class="col style-border">
+          1 of 3
+        </div>
+        <div class="col-md-auto style-border">
+          Variable width content
+        </div>
+        <div class="col col-lg-2 style-border">
+          3 of 3
+        </div>
+      </div>
+    </div>
+    <h2>Grid 3</h2>
+    <div class="grid text-center">
+      <div class="g-col-3 g-start-2 style-border">.g-col-3 .g-start-2</div>
+      <div class="g-col-4 g-start-6 style-border">.g-col-4 .g-start-6</div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
