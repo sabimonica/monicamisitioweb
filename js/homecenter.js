@@ -34,11 +34,13 @@ let boxBtn1 = document.getElementById("boxBtn1");
 let boxBtn2 = document.getElementById("boxBtn2");
 let boxBtn3 = document.getElementById("boxBtn3");
 let boxBtn4 = document.getElementById("boxBtn4");
+let btnClose = document.getElementById("btn-close");
 
 iconArrowLeft.addEventListener("click", function() {
     if (idSlider.classList.contains("slider-view-2")) {
         idSlider.classList.add("slider-view-1");
         idSlider.classList.remove("slider-view-2");
+       
     }
     else if (idSlider.classList.contains("slider-view-3")) {
         idSlider.classList.add("slider-view-2");
@@ -64,6 +66,7 @@ iconArrowRight.addEventListener("click", function() {
     else if (idSlider.classList.contains("slider-view-3")) {
         idSlider.classList.add("slider-view-4");
         idSlider.classList.remove("slider-view-3");
+    
     }
 });
 
