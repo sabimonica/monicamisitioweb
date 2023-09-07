@@ -1,0 +1,14 @@
+.box-top{
+    width: 100%;
+    height: 300px;
+}
+.mi-form{
+    margin-bottom: 40px;
+}
+.style-alert{
+    background-color: blue;
+}
+.icon-style-alert{
+    height: 30px;
+    width: 30px;
+}
