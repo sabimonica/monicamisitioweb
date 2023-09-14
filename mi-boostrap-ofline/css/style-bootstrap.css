@@ -1,0 +1,40 @@
+
+.box-example-colors{
+    width: 300px;
+    height: 300px;
+}
+.box-example-breakpoints{
+    height: 100px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+}
+.style-border{
+    border:  1px solid rgb(64, 64, 64);
+}
+.menu-fixed{
+    position: fixed;
+}
+.menu-hidden{
+    position: static;
+    visibility: hidden;
+}
+.box-position-spiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.position-spiner{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.position-colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3em;
+}
