@@ -45,7 +45,7 @@ let inputbusqueda = document.getElementById("inputBusqueda");
         let imgAuto = document.createElement("img");
         boxImg.appendChild(imgAuto);
         boxImg.setAttribute("class", "box-img");
-        imgAuto.setAttribute("src", "img/toyotaaa.png");
+        imgAuto.setAttribute("src", "img/toyota.png");
         imgAuto.setAttribute("class","img-auto");
 
     // crear contenedor para la informacion
