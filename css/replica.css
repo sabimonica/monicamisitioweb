@@ -22,12 +22,6 @@
     display: block;
   } 
   :root {
-    --clr-veryDarkMagenta: hsl(300, 43%, 22%); 
-    --clr-softPink: hsla(333, 80%, 67%);
-    --clr-darkGrayishMagenta: hsl(303, 10%, 53%);
-    --clr-lightGrayishMagenta: hsl(300, 24%, 96%);
-    --clr-white: hsl(0, 0%, 100%);
-    
     --ff-body: 'League Spartan', sans-serif;
     --fs-body: .9735rem;
     --fw-400: 400;
@@ -52,6 +46,7 @@
   }
   .intro {
     text-align: center;
+    color: rgb(80, 32, 80);
   }
   .encabezado {
     color: var(--clr-veryDarkMagenta);
@@ -60,14 +55,15 @@
     margin-bottom: 1rem;
   }
   .text-introduc {
-    color: var(--clr-darkGrayishMagenta);
+    color:  hsl(303, 10%, 53%);
     max-width: 44ch;
   }
   .cuadrados {
     margin-block: 2.5rem;
   }
   .cubos {
-    background: var(--clr-lightGrayishMagenta);
+    color: rgb(80, 32, 80);
+    background-color:hsl(300, 20%, 96%) ;
     text-align: center;
     padding: .8em;
     border-radius: 8px;
@@ -87,8 +83,8 @@
     margin-top: 0.75rem;
   }
   .tarjeta {
-    background: var(--clr-veryDarkMagenta);
-    color: var(--clr-white);
+    background-color: rgb(80, 32, 80);
+    color: white;
     padding: 2em;
     border-radius: 8px;
   }
@@ -106,7 +102,7 @@
     font-size: var(--fs-body);
   }
   .nombrecliente--verified {
-    color: var(--clr-softPink);
+    color:rgb(182, 79, 134) ;
     opacity: .67;
     font-weight: var(--fw-500);
     margin-top: 0.6rem;
@@ -116,6 +112,7 @@
   }
   .tarjeta + .tarjeta {
     margin-top: .75rem;
+    background-color: rgb(80, 32, 80);
   }
   .attribution {
     font-size: 11px;
