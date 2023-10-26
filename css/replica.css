@@ -31,7 +31,7 @@
     margin-bottom: 1rem;
   }
   .text-introduc {
-    color:  hsl(303, 10%, 53%);
+    color: rgb(147, 123, 146);
     max-width: 44ch;
   }
   /* contenedor de los cuadros de estrllas*/
@@ -98,7 +98,6 @@
   }
   .attribution a {
     text-decoration: none;
-    color: var(--clr-softPink);
   }
   
   /*para que se vea en el celular*/
