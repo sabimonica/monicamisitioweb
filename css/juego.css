@@ -19,15 +19,15 @@ body{
 }
 
 .dino {
-    width: 100px;
-    height: 100px;
+    width: 84px;
+    height: 84px;
 
     position: absolute;
     bottom: 22px;
     left: 42px;
     z-index: 2;
 
-    background: url("../img/naaa.png"); /*para que aparesca en en eje x*/
+    background: url("../img/dino.png"); /*para que aparesca en en eje x*/
     background-size: 336px 84px;
     background-position-x: 0px;
 
@@ -70,8 +70,8 @@ body{
 
     background: url("../img/asteroide.png") no-repeat;
 }
-
-/* .nube{
+/* 
+.nube{
     width: 92px;
     height: 26px;
 
