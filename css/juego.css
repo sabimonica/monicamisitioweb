@@ -19,15 +19,15 @@ body{
 }
 
 .dino {
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
 
     position: absolute;
     bottom: 22px;
     left: 42px;
     z-index: 2;
 
-    background: url("../img/dino.png"); /*para que aparesca en en eje x*/
+    background: url("../img/naaa.png"); /*para que aparesca en en eje x*/
     background-size: 336px 84px;
     background-position-x: 0px;
 
