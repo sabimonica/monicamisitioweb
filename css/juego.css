@@ -6,13 +6,14 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #616463;
 }
 .contenedor {
     width: 920px;
     height: 280px;
     margin: 0 auto;
     position: relative;
-    background: linear-gradient(#b7d6c7, #ffe2d1) ;/*para mesclar dos colores y hacer*/
+    background: linear-gradient(#044a8b, #491347) ;/*para mesclar dos colores y hacer*/
     transition: background-color 1s linear;
     overflow: hidden;
 }
@@ -20,38 +21,40 @@ body{
 .dino {
     width: 84px;
     height: 84px;
+
     position: absolute;
     bottom: 22px;
     left: 42px;
     z-index: 2;
-    background: url("../img/dino.png") repeat-x 0px 0px; /*para que aparesca en en eje x*/
+
+    background: url("../img/dino.png"); /*para que aparesca en en eje x*/
     background-size: 336px 84px;
     background-position-x: 0px;
 
 }
 
 .dino-corriendo {
-    animation: animarDino 0.25s steps(2) infinite;
+    animation: animarDino 0.25s steps(2) infinite; /* para que no muestre puntos intermedios*/
 }
 .dino-estrellado {
     background-position-x: -252px;
 }
 
 .suelo {
-    width: 200%;
+    width: 200%; /* para que sea infinito debo hacerlo el doble de ancho de mi contenedor*/
     height: 42px;
 
     position: absolute;
     bottom: 0;
     left: 0;
 
-    background: url("../img/suelo.png") repeat-x 0px 0px;
+    background: url("../img/pidrasuelo.png") repeat-x 0px 0px;
     background-size: 50% 42px;
 
 }
 
 .cactus{
-    width: 46px;
+    width: 100px;
     height: 96px;
 
     position: absolute;
@@ -59,27 +62,27 @@ body{
     left: 600px;
     z-index: 1;
 
-    background: url("../img/cactus1.png") no-repeat;
+    background: url("../img/cometa.png") no-repeat;
 }
 .cactus2{
     width: 98px;
     height: 66px;
 
-    background: url("../img/cactus2.png") no-repeat;
+    background: url("../img/asteroide.png") no-repeat;
 }
 
-.nube{
+/* .nube{
     width: 92px;
     height: 26px;
 
     position: absolute;
     z-index: 0;
 
-    background: url("../img/nube.png") no-repeat;
+    background: url("../img/estre1.png") no-repeat;
     background-size: 92px 26px;
-}
+} */
 
-.score{
+/* .score{
     width: 100px;
     height: 30px;
 
@@ -93,7 +96,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     text-align: right;
-}
+} */
 
 .game-over{
     display: none;
@@ -103,9 +106,8 @@ body{
 
 
     text-align: center;
-    color: #7e928b;
+    color: #616463;
     font-size: 30px;
-    font-family: Verdana;
     font-weight: 700;
 }
 

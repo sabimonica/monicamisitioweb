@@ -1,5 +1,5 @@
-//****** GAME LOOP ********//
-
+/*Aqui va el juego*/
+/*esto es para que la funcio apdate se llamde de 30 a 60 veces Xs*/
 var time = new Date();
 var deltaTime = 0;
 
@@ -22,7 +22,7 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
-//****** GAME LOGIC ********//
+//variable de los Objetos que voy a querer animas //
 
 var sueloY = 22;
 var velY = 0;
@@ -30,10 +30,10 @@ var impulso = 900;
 var gravedad = 2500;
 
 var dinoPosX = 42;
-var dinoPosY = sueloY; 
+var dinoPosY = sueloY; /* pocision del suelo*/
 
 var sueloX = 0;
-var velEscenario = 1280/3;
+var velEscenario = 1280/3; /*elocidad a la que quiero que valla*/
 var gameVel = 1;
 var score = 0;
 
@@ -69,7 +69,7 @@ function Start() {
     document.addEventListener("keydown", HandleKeyDown);
 }
 
-function Update() {
+function Update() { /* para hacer que los ostaculos avances sobre el dinosaurio y asi hace pareser que esta corriendo  */
     if(parado) return;
     
     MoverDinosaurio();
