@@ -1,0 +1,8 @@
+.icon{
+    color: gold;
+    font-size: 2em;
+}
+.box-estrellas{
+    display: flex;
+    flex-direction: row;
+}
