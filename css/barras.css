@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+    
+}
+.cotec-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barra {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contenedor-barras {
+    display: flex;
+    margin-top: 20px;
+}
+.barra-progresiva {
+    margin: 0 10px;
+    text-align: center;
+}
+.bar-progre {
+    border-radius: 20px;
+    background-color: rgb(219, 135, 52);
+    height: 20px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+    border: 30px;
+}
+.progreso {
+    margin-top: 5px;
+}
+
+#btnProgreso {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: cadetblue;
+    border-radius: 20px;
+}

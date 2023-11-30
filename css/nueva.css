@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    text-align: right;
+}
+
+.horizontal{
+    background-color: gainsboro;
+    height: 50px;
+}
+.two{
+    list-style: none;
+    display: inline-block;
+}
+.box{
+    display: inline-block;
+    width: 30%;
+    margin-left: 20px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+
