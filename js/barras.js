@@ -1,34 +1,20 @@
-document.getElementById("btnProgreso").addEventListener("click", function () {
-    // Obtener el contenedor de barras
-    var containerBars = document.querySelector(".contenedor-barras");
+function llenarBarras() {
+    let puntuacion5 = parseFloat(document.getElementById("puntuacion5").value) || 0;
+    let puntuacion4 = parseFloat(document.getElementById("puntuacion4").value) || 0;
+    let puntuacion3 = parseFloat(document.getElementById("puntuacion3").value) || 0;
+    let puntuacion2 = parseFloat(document.getElementById("puntuacion2").value) || 0;
+    let puntuacion1 = parseFloat(document.getElementById("puntuacion1").value) || 0;
 
-    // Obtener los valores ingresados
-    var values = Array.from(Array(5).keys()).map(i => parseInt(document.getElementById(`input${i + 1}`).value));
+    let sumaTotal = puntuacion5 + puntuacion4 + puntuacion3 + puntuacion2 + puntuacion1;
 
-    // Validar que los valores estén entre 0 y 100
-    if (values.every(value => value >= 0 && value <= 100)) {
-        // Limpiar el contenedor de barras
-        containerBars.innerHTML = "";
+    if (sumaTotal > 0) {
+      let barras = document.querySelectorAll("#starBars progress");
+      let labels = document.querySelectorAll("#starBars .progress-label");
 
-        // Crear y agregar una barra de progreso por cada número ingresado
-        values.forEach(value => {
-            var containerProgress = document.createElement("div");
-            containerProgress.className = "barra-progresiva";
-
-            var barProgress = document.createElement("div");
-            barProgress.className = "bar-progre";
-            barProgress.style.width = value + "%";
-
-            var progreso = document.createElement("div");
-            progreso.className = "progreso";
-            progreso.innerText = value + "%";
-
-            containerProgress.appendChild(barProgress);
-            containerProgress.appendChild(progreso);
-            containerBars.appendChild(containerProgress);
-        });
-    } else {
-        alert("Ingrese valores entre 0 y 100 en cada campo.");
+      barras.forEach((bar, index) => {
+        let porcentaje = (eval(`puntuacion${5 - index}`) / sumaTotal) * 100; // Aquí, 5 - index se utiliza para generar dinámicamente los números del 5 al 1. Explicado de manera simple, cuando index es 0, obtienes 5 - 0 = 5, cuando
+        bar.value = porcentaje;
+        labels[index].textContent = `${porcentaje.toFixed()}%`;
+      });
     }
-});
-
+  }

@@ -1,46 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-}
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: gainsboro;
-    
-}
-.cotec-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.barra {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.contenedor-barras {
-    display: flex;
-    margin-top: 20px;
-}
-.barra-progresiva {
-    margin: 0 10px;
-    text-align: center;
-}
-.bar-progre {
-    border-radius: 20px;
-    background-color: rgb(219, 135, 52);
-    height: 20px;
-    width: 0;
-    transition: width 0.5s ease-in-out;
-    border: 30px;
-}
-.progreso {
-    margin-top: 5px;
-}
+* {
+    margin: 0;
+    padding: 0;
+  }
 
-#btnProgreso {
-    margin-top: 10px;
-    padding: 8px;
-    cursor: pointer;
-    background-color: cadetblue;
-    border-radius: 20px;
-}
+  .contenedor {
+    font-weight: 300;
+    background-color: gainsboro;
+    display: block;
+    border-radius: 7px;
+    width: 300px;
+    left: 23px;
+    top: 23px;
+    padding: 20px;
+    height: auto;
+    position: relative;
+    margin: 12px;
+  }
+  .valor{
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    display:flex ;
+    border-radius: 3px;
+  }
+  input{
+    border-radius: 1px;
+  }
+  progress {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    transition: value 0.5s ease-in-out;
+  }
+  .sta-Bars{
+    width: 500px;
+    position: relative;
+    left: 23px;
+    top: 40px;
+  }
+  .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

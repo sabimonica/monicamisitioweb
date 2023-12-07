@@ -1,41 +1,48 @@
-
-
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barras de progreso</title>
+    <title>Calificar barras</title>
     <link rel="stylesheet" href="css/barras.css">
+    <link rel="stylesheet" href="icons/all.css">
+    
 </head>
 <body>
 
-<div class="contenedor">
-    <div class="cotec-input">
-        <label for="estrella">Estrella 1:</label>
-        <input type="number" name="" id="input1" class="barra" placeholder="ingrese un numero">
 
-        <label for="estrella">Estrella 2:</label>
-        <input type="number" name="" id="input2" class="barra" placeholder="ingrese un numero">
 
-        <label for="estrella">Estrella 3:</label>
-        <input type="number" name="" id="input3" class="barra" placeholder="ingrese un numero">
+  <div class="contenedor">
+  <div>
+    <label for="puntuacion5">Puntuación 5</label> <input id="puntuacion5" type="number"><br>
+    <br><label for="puntuacion4">Puntuación 4</label> <input id="puntuacion4" type="number"><br>
+    <br><label for="puntuacion3">Puntuación 3</label> <input id="puntuacion3" type="number"><br>
+    <br><label for="puntuacion2">Puntuación 2</label> <input id="puntuacion2" type="number"><br>
+    <br><label for="puntuacion1">Puntuación 1</label> <input id="puntuacion1" type="number"><br>
+    <div class="valor">
+        <br><input id="valor" type="button" class="valor" value="Calcular" onclick="llenarBarras()">
 
-        <label for="estrella">Estrella 4:</label>
-        <input type="number" name="" id="input4" class="barra" placeholder="ingrese un numero">
-
-        <label for="estrella">Estrella 5:</label>
-        <input type="number" name="" id="input5" class="barra" placeholder="ingrese un numero">
-
-        <button id="btnProgreso">Calcular</button>
     </div>
-    <div class="contenedor-barras">
-        <progress> </progress>
-        
-    </div>
+    
+  </div>
 </div>
-<script src="js/barras.js"></script>
 
+<div id="starBars" class="sta-Bars">
+  <div class="progress-label"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progress-label"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progress-label"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progress-label"></div>
+  <progress value="0" max="100"></progress>
+
+  <div class="progress-label"></div>
+  <progress value="0" max="100"></progress>
+</div>
 </body>
+<script src="js/barras.js"></script>
 </html>

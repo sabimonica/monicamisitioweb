@@ -1,30 +1,40 @@
 *{
     margin: 0;
     padding: 0;
+    top: 0;
+    left: 0;
 }
 .menu-vertical{
-    background-color:gainsboro;
+    background-color: gainsboro;
     position: fixed;
-    top: 0; /*para que no quede maegen arriba*/
+    top: 0;
     left: 0;
     height: 100%;
-    width: 200px;
+    width: 100px;
 }
 .one{
-    margin: 50px;
+    margin: 20px;
     list-style: none;
 }
 .menu-horizontal{
-    background-color:gainsboro;
+    background-color: gainsboro;
     height: 100%;
     text-align: right;
 }
-.li{
+.two{
     list-style: none;
-    margin: 20px; 
     display: inline-block;
+    padding: 30px 150px;
 }
 a{
     text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.imagen{
+
 }
 
